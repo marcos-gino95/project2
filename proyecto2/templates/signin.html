@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    sign in
+{% endblock %}
+
+{% block content %}
+
+<h4>Write a name </h4>
+<form action="/signin" method="POST">
+    <div class="form-group">
+        <input type="text" class="form-control-lg" id="username" name="username" autofocus>    </div>
+    <button class="btn btn-success" type="submit">Sign In</button>
+</form>
+
+{% endblock %}
